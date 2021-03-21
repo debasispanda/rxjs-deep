@@ -31,9 +31,23 @@
 
 
 ## Observer
+An [Observer](/src/observer.ts) is a consumer of values delivered by an Observable. Observers are simply a set of callbacks, one for each type of notification delivered by the Observable: next, error, and complete.
 
 ## Operators
+Operators are functions and they two types.
 
+1. **Pipable operators**
+    - Can be piped to observables using `pipe` method.
+    - These are mainly pure functions which takes observable input and return another observable as output.
+    - They do not change the original input observable.
+    - Subscribing to the output Observable will also subscribe to the input Observable.
+      
+      e.g: `map`, `tap`, `switchMap` etc
+2. **Creation operators**
+    - Creation Operators are the other kind of operator, which can be called as standalone functions to create a new Observable.
+
+      e.g: `from`, `of`
+    
 ### Creation Operators
 
 #### ajax
