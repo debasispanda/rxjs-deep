@@ -25,7 +25,7 @@
     - [iif](#iif)
 
 ## Observable
-[Observables]('./src/observable.ts') are lazy Push collections of multiple values. They use Push protocols to communicate.
+[Observables](/src/observable.ts) are lazy Push collections of multiple values. They use Push protocols to communicate.
 
 > Push and Pull are two different protocols which is used between a Producer and Consumer for communication.
 
